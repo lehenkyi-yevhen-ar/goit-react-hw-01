@@ -1,5 +1,7 @@
 import Profile from "./Profile";
 import userData from "../userData.json";
+import friends from "../friends.json";
+import FriendList from "./FriendList";
 
 function App() {
   return (
@@ -11,16 +13,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <ul>
-        {friends.map((friend) => (
-          <li key={friend.id}>
-            <FriendListItem
-              name={friend.name}
-              isOnline={friend.isOnline}
-            />
-          </li>
-        ))}
-      </ul>
+      <FriendList friends={friends} />
     </>
   );
 }
