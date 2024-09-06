@@ -1,0 +1,32 @@
+.table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  padding: 5px 50px;
+  border: 1px solid black;
+}
+
+.thead {
+  background-color: #464242;
+}
+
+.h {
+  color: white;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: lightgray;
+}
+
+.tbody td:first-child {
+  text-align: left;
+}
+
+.type {
+  text-transform: capitalize;
+}
